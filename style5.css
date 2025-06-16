@@ -1,0 +1,457 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body {
+  
+  background: linear-gradient(to bottom, #ffffff, #e6f0ff, #d4e4f7);
+
+}
+
+.header img{
+    padding:20px;
+    margin-left: 450px;
+    justify-content: center;
+    width:600px;
+    height:auto;
+    object-fit: cover;
+    border-radius: 202px;
+}
+
+
+.header h1{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin-left:0.01rem;
+    justify-content: center;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-size:xx-large;
+    background-color: #003366;
+    color: white;
+    padding-top: 0.5rem;
+    text-decoration: solid;
+    object-fit: cover;
+    width:100%;
+    margin-bottom: 0px;
+
+}
+.admissions-banner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ae1a1a;
+  
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.admissions-banner p {
+  margin: 2px 0;
+ 
+}
+.admissions-banner a{
+  color: white;
+}
+.admissions-banner p:hover{
+  text-decoration: underline;
+}
+   /* Navigation Bar Styling */
+nav {
+  background: linear-gradient(to right,rgb(251, 90, 90),rgb(192, 26, 26));
+  padding: 10px;
+  position: relative;
+  z-index: 999;
+  margin-bottom: 10px;
+ 
+}
+
+/* Hide Hamburger by Default (for desktop) */
+.hamburger {
+  display: none;
+}
+
+/* Section Links Style */
+.section-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: large;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 100px;
+  animation: slideInFromLeft 1.2s ease-out forwards;
+}
+
+/* Animation for Slide-In Effect */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Style for links and labels */
+.section-links a,
+.section-links label {
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  padding: 0 5px;
+}
+
+.section-links a:hover,
+.section-links label:hover {
+  color: #ffcc00;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+}
+
+/* Hide checkboxes */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* ✅ CSS using :has() to show dropdown */
+.dropdown:has(input[type="checkbox"]:checked) .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1000;
+  min-width: 220px;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  color: black;
+  text-decoration: none;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+.hero img{
+    margin: 0 auto;
+    display: block;
+    width:100%;
+    height:auto;
+    animation: slideInFromLeft 1.2s ease-out forwards;
+    
+   
+}
+h1{
+    
+      text-align: center;
+      color: #000966;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      text-decoration: underline;
+      margin-top: 20px;
+    
+
+}
+table {
+  width: 75%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(104, 95, 95, 0.168);
+  margin-bottom: 50px;
+  margin-left: 195px;
+}
+
+thead {
+  background-color: #003366;
+  color: #ffffff;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.footer {
+  position: relative;
+  background-image: url("karunya.jpg"); /* Replace with correct image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+  overflow: hidden;
+}
+
+/* Grey transparent overlay */
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.footer-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+  min-width: 230px;
+}
+
+.footer-column h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+  border-left: 5px solid #0056b3;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 8px 0;
+}
+
+.footer-column ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #be2c2c;
+}
+
+.footer-column p,
+.footer-column h3,
+.footer-column a {
+  color: #ffffff;
+}
+
+.footer-column h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffcc00;
+  margin: 8px 0;
+}
+
+.footer-column p {
+  font-size: 15px;
+  color: #e0e0e0;
+}
+
+/* Social Media Icons */
+.Social.icons h4 {
+  margin-top: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.Social.icons a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  background: #ffffff;
+  color: #0056b3;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.Social.icons a:hover {
+  background: #ffcc00;
+  color: black;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  color: #cccccc;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .section-links {
+    display: none;
+    flex-direction: column;
+    background-color: #004e9a;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  #menu-toggle:checked ~ .section-links {
+    display: flex;
+  }
+
+  .header img{
+    padding:20px;
+    margin-left: 20px;
+    justify-content: center;
+    width:400px;
+    height:auto;
+    object-fit: cover;
+    border-radius: 202px;
+    animation: slideInFromLeft 1.2s ease-out forwards;
+}
+
+
+.header h1{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-left:0px;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+
+    font-weight: 700;
+    font-size:large;
+    background:linear-gradient(to right,rgb(134, 207, 232),rgb(27, 85, 143),rgb(1, 30, 79));
+    color: white;
+    padding-top: 0.5rem;
+    text-decoration: solid;
+    object-fit: fill;
+    
+
+}
+.admissions-banner {
+  display: none;
+}
+
+  /* Navbar responsive */
+  .section-links {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 8px;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  nav {
+    padding: 8px;
+  }
+
+  /* Hero image */
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Page heading */
+  h1 {
+    font-size: 18px;
+    margin: 10px auto;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  /* Table responsiveness */
+  table {
+    width: 95%;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+    display: block;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  /* Footer layout responsive */
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  .footer-column {
+    min-width: 100%;
+  }
+
+  .footer-column h4 {
+    font-size: 18px;
+  }
+
+  .footer-column p,
+  .footer-column ul li a {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    padding-top: 15px;
+  }
+
+  /* Social media icon resizing */
+  .Social.icons a {
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+

@@ -1,0 +1,596 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+
+   .header img{
+    padding:20px;
+    margin-left: 450px;
+    justify-content: center;
+    width:600px;
+    height:auto;
+    object-fit: cover;
+    border-radius: 202px;
+}
+
+
+
+.header h1{
+    padding-left: 600px;
+    padding-bottom: 10px;
+    margin-left:450;
+    justify-content: center;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-size:xx-large;
+    background-color: #003366;
+    color: white;
+    padding-top: 0.5rem;
+    text-decoration: solid;
+    object-fit: fill;
+
+}
+.admissions-banner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ae1a1a;
+  
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.admissions-banner p {
+  margin: 2px 0;
+ 
+}
+.admissions-banner a{
+  color: white;
+}
+.admissions-banner p:hover{
+  text-decoration: underline;
+}
+
+
+
+/* Navigation Bar Styling */
+nav {
+  background: linear-gradient(to right,rgb(251, 90, 90),rgb(192, 26, 26));
+  padding: 10px;
+  position: relative;
+  z-index: 999;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hide Hamburger by Default (for desktop) */
+.hamburger {
+  display: none;
+}
+
+/* Section Links Style */
+.section-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: large;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 100px;
+  animation: slideInFromLeft 1.2s ease-out forwards;
+}
+
+/* Animation for Slide-In Effect */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Style for links and labels */
+.section-links a,
+.section-links label {
+  font-weight: 570;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  padding: 0 5px;
+}
+
+.section-links a:hover,
+.section-links label:hover {
+  color: #ffcc00;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+}
+
+/* Hide checkboxes */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* ✅ CSS using :has() to show dropdown */
+.dropdown:has(input[type="checkbox"]:checked) .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1000;
+  min-width: 220px;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  color: black;
+  text-decoration: none;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+.hero img{
+    margin: 0 auto;
+    display: block;
+    width:100%;
+    height:auto;
+    
+   
+}
+
+body {
+
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: linear-gradient(135deg, #f0f2e6, #d1dbd9, #c4d7f2);
+   animation: gradientFlow 15s ease infinite;
+   margin: 0;
+
+}
+@keyframes gradientFlow {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.placement-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.placement-section h2 {
+  font-size: 36px;
+  color: #1a2d6b;
+  margin-bottom: 20px;
+}
+
+.placement-text-box {
+  max-width: 1100px;
+  background: white;
+  padding: 20px 30px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-top: 5px solid #1a2d6b;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.stats-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: url('pp.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.stats-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: 0;
+}
+
+.stat-box {
+  flex: 1 1 200px;
+  max-width: 220px;
+  padding: 20px;
+  margin: 15px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.stat-box i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.stat-box h3 {
+  font-size: 32px;
+  margin: 5px 0;
+}
+
+.stat-box p {
+  font-size: 18px;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container h1{
+    text-align: center;
+    color: #18234b;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-header {
+  background: #004a99;
+  color: white;
+  padding: 16px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.card-header:hover {
+  background: #003d7a;
+}
+
+.card-body {
+  display: none;
+  padding: 10px 20px 20px;
+}
+
+.card-body.open {
+  display: block;
+  animation: fadeIn 0.3s ease-in;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  background: #e9eff5;
+}
+
+thead th {
+  padding: 14px;
+  text-align: left;
+  color: #333;
+  font-weight: 600;
+}
+
+tbody td {
+  padding: 12px;
+  color: #444;
+  border-top: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-top: 4px solid #d3202e; /* Optional: adds university branding color */
+    border-bottom: 4px solid #d3202e;
+    margin-bottom: 10px;
+    mix-blend-mode:darken;
+    
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.footer {
+  background-color: #1d1d1d;
+  color: #ffffff;
+  padding: 30px 20px 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 180px;
+  min-width: 160px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #f5b301;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #f5b301;
+}
+
+.contact p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  background: #fff;
+  color: #1d1d1d;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 6px;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  font-size: 13px;
+  color: #bbb;
+}
+/* 🌐 Responsive Design for Tablets & Mobiles */
+@media (max-width: 768px) {
+  /*Lab*/
+
+    .hamburger {
+    display: block;
+  }
+
+  .section-links {
+    display: none;
+    flex-direction: column;
+    background-color: #004e9a;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  #menu-toggle:checked ~ .section-links {
+    display: flex;
+  }
+
+   .header img{
+    padding:20px;
+    margin-left: 50px;
+    justify-content: center;
+    width:400px;
+    height:auto;
+    object-fit: cover;
+    border-radius: 200px;
+}
+.admissions-banner {
+  display: none;
+}
+
+.header h1{
+    padding-left: 50px;
+    padding-bottom: 10px;
+    margin-left:0px;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+
+    font-weight: 700;
+    font-size:large;
+    background:linear-gradient(to right,rgb(134, 207, 232),rgb(27, 85, 143),rgb(1, 30, 79));
+    color: white;
+    padding-top: 0.5rem;
+    text-decoration: solid;
+    object-fit: fill;
+    
+
+}
+
+
+  /* Footer layout */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-column h4 {
+    border-left: none;
+    border-bottom: 2px solid #f5b301;
+    display: inline-block;
+    padding: 5px 0;
+  }
+
+  .footer-column a,
+  .footer-column p {
+    font-size: 14px;
+  }
+
+  .social-icons a {
+    padding: 6px;
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    padding-top: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .placement-section h2 {
+    font-size: 24px;
+  }
+
+  .placement-text-box {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  .stats-section {
+    flex-direction: column;
+    padding: 40px 15px;
+  }
+
+  .stat-box {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .stat-box h3 {
+    font-size: 24px;
+  }
+
+  .stat-box p {
+    font-size: 16px;
+  }
+
+
+
+  .card-body {
+    padding: 10px 16px;
+  }
+
+  thead th, tbody td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .image {
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+
+  .image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .container h1 {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .card-header {
+    width: 95%;           /* Use more space on smaller screens */
+    font-size: 18px;      /* Slightly smaller text */
+    padding: 14px 18px;   /* Reduced padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-header {
+    width: 98%;
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+}
+

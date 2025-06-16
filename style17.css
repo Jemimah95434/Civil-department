@@ -1,0 +1,466 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+
+   .header img{
+    padding:20px;
+    margin-left: 450px;
+    justify-content: center;
+    width:600px;
+    height:auto;
+    object-fit: cover;
+    border-radius: 202px;
+}
+
+
+
+.header h2{
+  text-align: center;
+  background-color:  #264463;
+  color:white;
+  object-fit: cover;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-left: 570px;
+  margin-bottom: 10px;
+
+}
+.admissions-banner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ae1a1a;
+  
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.admissions-banner p {
+  margin: 2px 0;
+ 
+}
+.admissions-banner a{
+  color: white;
+}
+.admissions-banner p:hover{
+  text-decoration: underline;
+}
+
+/* Navigation Bar Styling */
+nav {
+  background: linear-gradient(to right,rgb(251, 90, 90),rgb(192, 26, 26));
+  padding: 10px;
+  position: relative;
+  z-index: 999;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Hide Hamburger by Default (for desktop) */
+.hamburger {
+  display: none;
+}
+
+/* Section Links Style */
+.section-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: large;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 100px;
+  animation: slideInFromLeft 1.2s ease-out forwards;
+}
+
+/* Animation for Slide-In Effect */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Style for links and labels */
+.section-links a,
+.section-links label {
+  font-weight: 570;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  padding: 0 5px;
+}
+
+.section-links a:hover,
+.section-links label:hover {
+  color: #ffcc00;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+}
+
+/* Hide checkboxes */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* ✅ CSS using :has() to show dropdown */
+.dropdown:has(input[type="checkbox"]:checked) .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1000;
+  min-width: 220px;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  color: black;
+  text-decoration: none;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+body{
+   background: linear-gradient(to left,silver,white);
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+.container h1{
+    text-align: center;
+    color: #18234b;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-header {
+  background: #004a99;
+  color: white;
+  padding: 16px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.card-header:hover {
+  background: #003d7a;
+}
+
+.card-body {
+  display: none;
+  padding: 10px 20px 20px;
+}
+
+.card-body.open {
+  display: block;
+  animation: fadeIn 0.3s ease-in;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+thead {
+  background: #e9eff5;
+}
+
+thead th {
+  padding: 14px;
+  text-align: left;
+  color: #333;
+  font-weight: 600;
+}
+
+tbody td {
+  padding: 12px;
+  color: #444;
+  border-top: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.footer {
+  position: relative;
+  background-image: url("karunya.jpg"); /* Replace with correct image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+  overflow: hidden;
+}
+
+/* Grey transparent overlay */
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.footer-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+  min-width: 230px;
+}
+
+.footer-column h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+  border-left: 5px solid #0056b3;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 8px 0;
+}
+
+.footer-column ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #be2c2c;
+}
+
+.footer-column p,
+.footer-column h3,
+.footer-column a {
+  color: #ffffff;
+}
+
+.footer-column h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffcc00;
+  margin: 8px 0;
+}
+
+.footer-column p {
+  font-size: 15px;
+  color: #e0e0e0;
+}
+
+/* Social Media Icons */
+.Social.icons h4 {
+  margin-top: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.Social.icons a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  background: #ffffff;
+  color: #0056b3;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.Social.icons a:hover {
+  background: #ffcc00;
+  color: black;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  color: #cccccc;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+/* 📱 Responsive Design for Screens <= 768px */
+@media (max-width: 768px) {
+
+
+  /* Cards */
+  .card {
+    margin: 10px 5px;
+    padding: 10px;
+  }
+
+  .card-header {
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .card-body {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  table {
+    font-size: 13px;
+    overflow-x: auto;
+    display: block;
+  }
+
+  thead th,
+  tbody td {
+    padding: 10px;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .footer-column {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .footer-column h4 {
+    font-size: 16px;
+    border-left: none;
+    border-bottom: 2px solid #f5b301;
+    padding: 5px 0;
+    display: inline-block;
+  }
+
+  .footer-column a,
+  .footer-column p {
+    font-size: 14px;
+  }
+
+  .Social.icons a {
+    padding: 8px;
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  /*Lab*/
+
+    .hamburger {
+    display: block;
+  }
+
+  .section-links {
+    display: none;
+    flex-direction: column;
+    background-color: #004e9a;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  #menu-toggle:checked ~ .section-links {
+    display: flex;
+  }
+
+   .header img{
+    padding:20px;
+    margin-left: 50px;
+    justify-content: center;
+    width:400px;
+    height:auto;
+    object-fit: cover;
+    border-radius: 200px;
+}
+.admissions-banner {
+  display: none;
+}
+
+
+.header h2{
+  text-align: center;
+  background-color:  #042954;
+  color:white;
+  object-fit: cover;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 10px 20px;
+  margin-left: 90px;
+  animation: slideInFromLeft 1.2s ease-out forwards;
+  margin-bottom: 10px;
+
+}
+}

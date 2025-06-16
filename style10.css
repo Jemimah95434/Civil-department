@@ -1,0 +1,455 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+
+   .header img{
+    padding:20px;
+    margin-left: 450px;
+    justify-content: center;
+    width:600px;
+    height:auto;
+    object-fit: cover;
+    border-radius: 202px;
+}
+
+
+
+.header h2{
+  text-align: center;
+  background-color:  #264463;
+  color:white;
+  object-fit: cover;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-left: 570px;
+  margin-bottom: 10px;
+
+}
+.admissions-banner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ae1a1a;
+  
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.admissions-banner p {
+  margin: 2px 0;
+ 
+}
+.admissions-banner a{
+  color: white;
+}
+.admissions-banner p:hover{
+  text-decoration: underline;
+}
+/* Navigation Bar Styling */
+nav {
+  background: linear-gradient(to right,rgb(251, 90, 90),rgb(192, 26, 26));
+  padding: 10px;
+  position: relative;
+  z-index: 999;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hide Hamburger by Default (for desktop) */
+.hamburger {
+  display: none;
+}
+
+/* Section Links Style */
+.section-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: large;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: 100px;
+  animation: slideInFromLeft 1.2s ease-out forwards;
+}
+
+/* Animation for Slide-In Effect */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Style for links and labels */
+.section-links a,
+.section-links label {
+  font-weight: 570;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  padding: 0 5px;
+}
+
+.section-links a:hover,
+.section-links label:hover {
+  color: #ffcc00;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+}
+
+/* Hide checkboxes */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* ✅ CSS using :has() to show dropdown */
+.dropdown:has(input[type="checkbox"]:checked) .dropdown-content {
+  display: block;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1000;
+  min-width: 220px;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  color: black;
+  text-decoration: none;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #ffffff, #f7f1e3, #e4e9f2);
+
+  color: #333;
+}
+
+.collaborations {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+  
+}
+
+.collaborations h2 {
+  font-size: 32px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.collaborations p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+.collab-card {
+  display: flex;
+  background: white;
+  border: 1px solid #dcdcdc;
+  border-left: 6px solid #003366;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  animation: slideInFromLeft 1.2s ease-out forwards;
+}
+
+.collab-card:hover {
+  transform: translateY(-5px);
+}
+
+.collab-card img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+.collab-info {
+  text-align: left;
+}
+
+.collab-info h3 {
+  font-size: 20px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.collab-info p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .collab-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .collab-card img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .collab-info {
+    text-align: left;
+  }
+}
+
+.footer {
+  position: relative;
+  background-image: url("karunya.jpg"); /* Replace with correct image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+  overflow: hidden;
+}
+
+/* Grey transparent overlay */
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.footer-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.footer-container h2{
+    color:white;
+    margin-left: 20px;
+}
+.footer-column {
+  flex: 1 1 250px;
+  min-width: 230px;
+}
+
+.footer-column h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+  border-left: 5px solid #0056b3;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 8px 0;
+}
+
+.footer-column ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #be2c2c;
+}
+
+.footer-column p,
+.footer-column h3,
+.footer-column a {
+  color: #ffffff;
+}
+
+.footer-column h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffcc00;
+  margin: 8px 0;
+}
+
+.footer-column p {
+  font-size: 15px;
+  color: #e0e0e0;
+}
+
+/* Social Media Icons */
+.Social.icons h4 {
+  margin-top: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.Social.icons a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  background: #ffffff;
+  color: #0056b3;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.Social.icons a:hover {
+  background: #ffcc00;
+  color: black;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  color: #cccccc;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+@media (max-width: 980px) {
+  .hamburger {
+    display: block;
+  }
+
+  .section-links {
+    display: none;
+    flex-direction: column;
+    background-color: #004e9a;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  #menu-toggle:checked ~ .section-links {
+    display: flex;
+  }
+
+  .header img{
+    padding:20px;
+    margin-left: 150px;
+    justify-content: center;
+    width:600px;
+    height:auto;
+    object-fit: cover;
+    border-radius: 202px;
+    animation: slideInFromLeft 1.2s ease-out forwards;
+}
+.header h2{
+  text-align: center;
+  background-color:  #042954;
+  color:white;
+ 
+  display: inline-block;
+  
+
+  margin-left: 200px;
+  animation: slideInFromLeft 1.2s ease-out forwards;
+  margin-bottom: 10px;
+
+}
+
+
+.admissions-banner {
+  display: none;
+}
+}
+@media (max-width: 992px) {
+
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+    gap: 30px;
+  }
+
+  .footer-column {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-column h4 {
+    font-size: 16px;
+    border-left: none;
+    border-bottom: 2px solid #0056b3;
+    padding: 5px 0;
+  }
+
+  .footer-column h3 {
+    font-size: 18px;
+  }
+
+  .footer-column p,
+  .footer-column ul li a {
+    font-size: 14px;
+  }
+
+  .Social.icons a {
+    margin: 5px;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    padding-top: 15px;
+  }
+
+  .Social.icons h4 {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .footer {
+    padding: 40px 15px;
+  }
+}
