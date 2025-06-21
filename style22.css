@@ -160,7 +160,7 @@ input[type="checkbox"] {
 
 .body1 {
   
-  background: linear-gradient(to left,silver,white);
+  background: linear-gradient(to left,rgb(199, 216, 233),rgba(190, 190, 190, 0.384));
   color: #333;
   line-height: 1.6;
   padding: 40px;
