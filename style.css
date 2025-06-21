@@ -350,7 +350,7 @@ input[type="checkbox"] {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(189, 188, 188, 0.466);
+  background-color: rgba(126, 126, 126, 0.656);
   backdrop-filter: blur(4px);
   z-index: 1;
 }
@@ -706,7 +706,7 @@ input[type="checkbox"] {
 
 .footer {
   position: relative;
-  background-image: url("karunya.jpg"); /* Replace with correct image path */
+  background-image: url("Karunya\ ariel\ photo.jpg"); /* Replace with correct image path */
   background-size: cover;
   background-position: center;
   color: white;
@@ -722,7 +722,7 @@ input[type="checkbox"] {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(21, 21, 21, 0.781);
   z-index: 0;
 }
 
@@ -918,16 +918,24 @@ body {
 
 
 .header h2{
-  text-align: center;
-  background-color:  #042954;
-  color:white;
-  object-fit: cover;
-  display: inline-block;
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin-left: 580px;
-  animation: slideInFromLeft 1.2s ease-out forwards;
-  margin-bottom: 10px;
+
+    padding-left: 550px;
+    padding-bottom: 10px;
+    margin-left:0px;
+    justify-content: center;
+    font-family: "Libre Caslon Text", serif;
+
+    font-weight: 700;
+    font-size:xx-large;
+    background:linear-gradient(to right,rgb(70, 130, 189), #003366);
+    color: white;
+    padding-top: 0.5rem;
+    text-decoration: solid;
+    object-fit: fill;
+    margin-bottom: 0px;;
+    
+
+
 
 }
 .contents{
@@ -1160,7 +1168,7 @@ body {
   }
 
   .achievement-card {
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .image-center {
@@ -1169,6 +1177,7 @@ body {
 
   .program-nav {
     gap: 40px;
+    
   }
 }
 
@@ -1181,6 +1190,7 @@ body {
   .achievement-card {
     padding: 20px;
     font-size: 1rem;
+    width:90%;
   }
 
   .brochure-bar {
@@ -1189,7 +1199,7 @@ body {
   }
 
   .carousel-title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   .program-nav a {
@@ -1198,11 +1208,12 @@ body {
   }
 
   .section-row .section {
-    flex: 1 1 100%;
+    flex: 1 1 50%;
   }
 
   .content-block {
     padding: 30px 20px;
+    width:90%
   }
 
   .image-center img {
@@ -1211,6 +1222,10 @@ body {
 
   .carousel-content {
     width: 100%;
+  }
+
+  .civ-image-wrapper{
+    display: none;
   }
 }
 
@@ -1235,6 +1250,7 @@ body {
     font-size: 0.95rem;
     transform: none;
     padding: 18px;
+    width:90%;
   }
 
   .section,
@@ -1266,6 +1282,7 @@ body {
 
   .news-carousel {
     padding: 20px 10px;
+    width:90%;
   }
 
   .carousel-content {

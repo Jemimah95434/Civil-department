@@ -9,7 +9,7 @@
 body {
   
   
-  background: linear-gradient(to bottom, #f5f7fa, #c3d7f2, #195bac);
+  background: linear-gradient(to left, #f5f7fa, #c3d7f2, #99c8ff9b,rgba(227, 239, 245, 0.716));
   
 
 }
@@ -26,17 +26,22 @@ body {
 }
 
 
-
 .header h2{
-  text-align: center;
-  background-color:  #263463;
-  color:white;
-  object-fit: cover;
-  display: inline-block;
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin-left: 600px;
-  margin-bottom: 20px;
+    padding-left: 550px;
+    padding-bottom: 10px;
+    margin-left:0px;
+    justify-content: center;
+    font-family: "Libre Caslon Text", serif;
+
+    font-weight: 700;
+    font-size:xx-large;
+    background:linear-gradient(to right,rgb(70, 130, 189), #003366);
+    color: white;
+    padding-top: 0.5rem;
+    text-decoration: solid;
+    object-fit: fill;
+    margin-bottom: 0px;
+    
 
 }
 .admissions-banner {
@@ -71,7 +76,7 @@ nav {
   padding: 10px;
   position: relative;
   z-index: 999;
-  margin-top: 20px;
+  
   font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: 20px;
 }
@@ -165,16 +170,18 @@ input[type="checkbox"] {
 
     h1 {
       text-align: center;
-      color: #000966;
+      color: #00275d;
       margin-bottom: 30px;
       margin-left: 30px;
       text-decoration: underline;
-      font-family: 'Roboto', sans-serif;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: xx-large;
+      letter-spacing: 0.01em;
     }
 
 
 .program {
-  background-color: #2c3e50;
+  background-color: #246ab0;
   color: white;
   padding: 15px;
   width: 500px;
@@ -240,7 +247,7 @@ tbody tr:last-child td:last-child {
 }
 .footer {
   position: relative;
-  background-image: url("karunya.jpg"); /* Replace with correct image path */
+  background-image: url("Karunya\ ariel\ photo.jpg"); /* Replace with correct image path */
   background-size:cover;
   background-position:center;
   color: white;
@@ -256,7 +263,7 @@ tbody tr:last-child td:last-child {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(21, 21, 21, 0.781);
   z-index: 0;
 }
 
@@ -375,7 +382,7 @@ tbody tr:last-child td:last-child {
 
   .header img{
     padding:20px;
-    margin-left: 50px;
+    margin-left: 20px;
     justify-content: center;
     width:400px;
     height:auto;
@@ -383,28 +390,34 @@ tbody tr:last-child td:last-child {
     border-radius: 202px;
     animation: slideInFromLeft 1.2s ease-out forwards;
 }
-.header h2{
-  text-align: center;
-  background-color:  #042954;
-  color:white;
- 
-  display: inline-block;
-  
 
-  margin-left: 90px;
-  animation: slideInFromLeft 1.2s ease-out forwards;
-  margin-bottom: 10px;
+
+.header h2{
+    padding-left: 150px;
+    padding-bottom: 10px;
+    margin-left:0px;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+
+    font-weight: 700;
+    font-size:large;
+    background:linear-gradient(to right,rgb(134, 207, 232),rgb(27, 85, 143),rgb(1, 30, 79));
+    color: white;
+    padding-top: 0.5rem;
+    text-decoration: solid;
+    object-fit: fill;
+    
 
 }
-
-
-
 .admissions-banner {
   display: none;
 }
-
+nav{
+  padding: 8px;
+}
 
 }
+
 /* 🟦 Small devices (phones, ≤ 480px) */
 @media (max-width: 480px) {
   h1 {

@@ -18,15 +18,15 @@
 
 
 
-.header h1{
-    padding-left: 600px;
+.header h2{
+    padding-left: 550px;
     padding-bottom: 10px;
     margin-left:450;
     justify-content: center;
     font-family: "Libre Caslon Text", serif;
     font-weight: 700;
     font-size:xx-large;
-    background-color: #003366;
+    background:linear-gradient(to right,rgb(70, 130, 189), #003366);
     color: white;
     padding-top: 0.5rem;
     text-decoration: solid;
@@ -167,7 +167,7 @@ body{
   text-align: center;
   font-size: 2.5rem;
   margin: 2rem 0;
-  color: #333333;
+  color: rgb(12, 44, 89);
   font-weight: 700;
  
 }
@@ -222,7 +222,7 @@ body{
 
 .footer {
   position: relative;
-  background-image: url("karunya.jpg"); /* Replace with correct image path */
+  background-image: url("Karunya\ ariel\ photo.jpg"); /* Replace with correct image path */
   background-size:cover;
   background-position:center;
   color: white;
@@ -238,7 +238,7 @@ body{
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(21, 21, 21, 0.781);
   z-index: 0;
 }
 
@@ -389,9 +389,7 @@ body{
 }
 /* 🌐 Responsive Design for Tablets & Mobiles */
 @media (max-width: 768px) {
-  /*Lab*/
-
-    .hamburger {
+  .hamburger {
     display: block;
   }
 
@@ -407,28 +405,27 @@ body{
     display: flex;
   }
 
-   .header img{
+  .header img{
     padding:20px;
-    margin-left: 50px;
+    margin-left: 20px;
     justify-content: center;
     width:400px;
     height:auto;
     object-fit: cover;
-    border-radius: 200px;
-}
-.admissions-banner {
-  display: none;
+    border-radius: 202px;
+    animation: slideInFromLeft 1.2s ease-out forwards;
 }
 
-.header h1{
-    padding-left: 170px;
+
+.header h2{
+    padding-left: 150px;
     padding-bottom: 10px;
     margin-left:0px;
     justify-content: center;
     font-family: 'Playfair Display', serif;
 
     font-weight: 700;
-    font-size:larger;
+    font-size:large;
     background:linear-gradient(to right,rgb(134, 207, 232),rgb(27, 85, 143),rgb(1, 30, 79));
     color: white;
     padding-top: 0.5rem;
@@ -437,6 +434,13 @@ body{
     
 
 }
+.admissions-banner {
+  display: none;
+}
+
+
+
+
 .Events h1{
   font-size: x-large;
 }

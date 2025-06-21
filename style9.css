@@ -19,15 +19,20 @@
 
 
 .header h2{
-  text-align: center;
-  background-color:  #264463;
-  color:white;
-  object-fit: cover;
-  display: inline-block;
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin-left: 570px;
-  margin-bottom: 10px;
+    padding-left: 550px;
+    padding-bottom: 10px;
+    margin-left:0px;
+    justify-content: center;
+    font-family: "Libre Caslon Text", serif;
+
+    font-weight: 700;
+    font-size:xx-large;
+    background:linear-gradient(to right,rgb(70, 130, 189), #003366);
+    color: white;
+    padding-top: 0.5rem;
+    text-decoration: solid;
+    object-fit: fill;
+    
 
 }
 .admissions-banner {
@@ -154,7 +159,7 @@ input[type="checkbox"] {
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background: linear-gradient(to bottom, #ffffff, #ffe5b4, #ffccb3);
+  background: linear-gradient(to bottom, rgba(243, 192, 171, 0.621),rgba(233, 218, 53, 0.495));
   
   color: #333;
 }
@@ -224,7 +229,7 @@ body {
 
 .footer {
   position: relative;
-  background-image: url("karunya.jpg"); /* Replace with correct image path */
+  background-image: url("Karunya\ ariel\ photo.jpg"); /* Replace with correct image path */
   background-size: cover;
   background-position: center;
   color: white;
@@ -238,7 +243,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(21, 21, 21, 0.781);
   z-index: 0;
 }
 
@@ -379,9 +384,11 @@ body {
   display: inline-block;
   
 
-  margin-left: 200px;
+  margin-left: 0px;
   animation: slideInFromLeft 1.2s ease-out forwards;
   margin-bottom: 10px;
+  padding-left: 1px;
+  width:100%;
 
 }
 

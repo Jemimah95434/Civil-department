@@ -6,7 +6,7 @@
     
 }
 body{
-   background: linear-gradient(to bottom, #ffffff, #5dade2, #117a8b);
+   background: linear-gradient(to bottom, #ffffff, #5dade299, #8ce7f57d);
 
 }
 .header img{
@@ -20,15 +20,15 @@ body{
 }
 
 
-.header h1{
-    padding-left: 30px;
+.header h2{
+    padding-left: 550px;
     padding-bottom: 10px;
     margin-left:0.01rem;
     justify-content: center;
     font-family: "Libre Caslon Text", serif;
     font-weight: 700;
     font-size:xx-large;
-    background-color: #003366;
+    background:linear-gradient(to right,rgb(70, 130, 189), #003366);
     color: white;
     padding-top: 0.5rem;
     text-decoration: solid;
@@ -295,7 +295,7 @@ h1{
     
 .footer {
   position: relative;
-  background-image: url("karunya.jpg"); /* Replace with correct image path */
+  background-image: url("Karunya\ ariel\ photo.jpg"); /* Replace with correct image path */
   background-size: cover;
   background-position: center;
   color: white;
@@ -309,7 +309,7 @@ h1{
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(21, 21, 21, 0.781);
   z-index: 0;
 }
 
@@ -413,7 +413,6 @@ h1{
   border-top: 1px solid #444;
   padding-top: 20px;
 }
-
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -443,8 +442,8 @@ h1{
 }
 
 
-.header h1{
-    padding-left: 20px;
+.header h2{
+    padding-left: 150px;
     padding-bottom: 10px;
     margin-left:0px;
     justify-content: center;
@@ -463,15 +462,10 @@ h1{
 .admissions-banner {
   display: none;
 }
+nav{
+  padding: 8px;
+}
 
-  /* Navbar responsive */
-  .section-links {
-    flex-direction: column;
-    margin-left: 0;
-    gap: 8px;
-    align-items: flex-start;
-    padding: 10px;
-  }
 
   
       h3{

@@ -19,15 +19,20 @@
 
 
 .header h2{
-  text-align: center;
-  background-color:  #264463;
-  color:white;
-  object-fit: cover;
-  display: inline-block;
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin-left: 570px;
-  margin-bottom: 10px;
+    padding-left: 550px;
+    padding-bottom: 10px;
+    margin-left:0px;
+    justify-content: center;
+    font-family: "Libre Caslon Text", serif;
+
+    font-weight: 700;
+    font-size:xx-large;
+    background:linear-gradient(to right,rgb(70, 130, 189), #003366);
+    color: white;
+    padding-top: 0.5rem;
+    text-decoration: solid;
+    object-fit: fill;
+    
 
 }
 .admissions-banner {
@@ -238,7 +243,7 @@ tbody tr:hover {
 }
 .footer {
   position: relative;
-  background-image: url("karunya.jpg"); /* Replace with correct image path */
+  background-image: url("Karunya\ ariel\ photo.jpg"); /* Replace with correct image path */
   background-size: cover;
   background-position: center;
   color: white;
@@ -252,7 +257,7 @@ tbody tr:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(21, 21, 21, 0.781);
   z-index: 0;
 }
 
@@ -358,9 +363,7 @@ tbody tr:hover {
 }
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-  /*Lab*/
-
-    .hamburger {
+  .hamburger {
     display: block;
   }
 
@@ -376,38 +379,48 @@ tbody tr:hover {
     display: flex;
   }
 
-   .header img{
+  .header img{
     padding:20px;
-    margin-left: 50px;
+    margin-left: 20px;
     justify-content: center;
     width:400px;
     height:auto;
     object-fit: cover;
-    border-radius: 200px;
-}
-.admissions-banner {
-  display: none;
+    border-radius: 202px;
+    animation: slideInFromLeft 1.2s ease-out forwards;
 }
 
 
 .header h2{
-  text-align: center;
-  background-color:  #042954;
-  color:white;
-  object-fit: cover;
-  display: inline-block;
-  border-radius: 2px;
-  padding: 10px 20px;
-  margin-left: 100px;
-  animation: slideInFromLeft 1.2s ease-out forwards;
-  margin-bottom: 10px;
+    padding-left: 150px;
+    padding-bottom: 10px;
+    margin-left:0px;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+
+    font-weight: 700;
+    font-size:large;
+    background:linear-gradient(to right,rgb(134, 207, 232),rgb(27, 85, 143),rgb(1, 30, 79));
+    color: white;
+    padding-top: 0.5rem;
+    text-decoration: solid;
+    object-fit: fill;
+    
 
 }
+.admissions-banner {
+  display: none;
 }
+nav{
+  padding: 8px;
+}
+
+}
+
 /* Small Mobile Devices (≤576px) */
 @media (max-width: 576px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.0rem;
   }
 
   h2 {

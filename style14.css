@@ -18,15 +18,15 @@
 
 
 
-.header h1{
-    padding-left: 600px;
+.header h2{
+    padding-left: 550px;
     padding-bottom: 10px;
     margin-left:450;
     justify-content: center;
     font-family: "Libre Caslon Text", serif;
     font-weight: 700;
     font-size:xx-large;
-    background-color: #003366;
+    background:linear-gradient(to right,rgb(70, 130, 189), #003366);
     color: white;
     padding-top: 0.5rem;
     text-decoration: solid;
@@ -355,30 +355,51 @@ tbody tr:hover {
 
 
 .footer {
-  background-color: #1d1d1d;
-  color: #ffffff;
-  padding: 30px 20px 10px;
-  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  background-image: url("Karunya\ ariel\ photo.jpg"); /* Replace with correct image path */
+  background-size:cover;
+  background-position:center;
+  color: white;
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+/* Grey transparent overlay */
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(21, 21, 21, 0.781);
+  z-index: 0;
 }
 
 .footer-container {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
-  max-width: 1200px;
+  gap: 40px;
+  max-width: 1300px;
   margin: auto;
+  padding: 40px 20px;
 }
 
 .footer-column {
-  flex: 1 1 180px;
-  min-width: 160px;
+  flex: 1 1 250px;
+  min-width: 230px;
 }
 
 .footer-column h4 {
-  margin-bottom: 15px;
-  font-size: 16px;
-  color: #f5b301;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+  border-left: 5px solid #0056b3;
+  padding-left: 10px;
+  text-transform: uppercase;
 }
 
 .footer-column ul {
@@ -387,53 +408,72 @@ tbody tr:hover {
 }
 
 .footer-column ul li {
-  margin-bottom: 8px;
+  margin: 8px 0;
 }
 
-.footer-column a {
+.footer-column ul li a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.footer-column a:hover {
-  color: #f5b301;
+.footer-column ul li a:hover {
+  color: #be2c2c;
 }
 
-.contact p {
-  font-size: 14px;
-  margin: 5px 0;
+.footer-column p,
+.footer-column h3,
+.footer-column a {
+  color: #ffffff;
 }
 
-.social-icons a {
+.footer-column h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffcc00;
+  margin: 8px 0;
+}
+
+.footer-column p {
+  font-size: 15px;
+  color: #e0e0e0;
+}
+
+/* Social Media Icons */
+.Social.icons h4 {
+  margin-top: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.Social.icons a {
   display: inline-block;
-  background: #fff;
-  color: #1d1d1d;
+  margin-right: 10px;
+  padding: 10px;
+  background: #ffffff;
+  color: #0056b3;
   border-radius: 50%;
-  padding: 8px;
-  margin-right: 6px;
-  font-size: 14px;
-  transition: transform 0.3s ease;
+  font-size: 18px;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.social-icons a:hover {
-  transform: scale(1.2);
+.Social.icons a:hover {
+  background: #ffcc00;
+  color: black;
+  transform: scale(1.1);
 }
 
 .footer-bottom {
   text-align: center;
-  margin-top: 25px;
-  padding-top: 10px;
+  margin-top: 40px;
+  color: #cccccc;
+  font-size: 14px;
   border-top: 1px solid #444;
-  font-size: 13px;
-  color: #bbb;
+  padding-top: 20px;
 }
-/* 🌐 Responsive Design for Tablets & Mobiles */
 @media (max-width: 768px) {
-  /*Lab*/
-
-    .hamburger {
+  .hamburger {
     display: block;
   }
 
@@ -449,21 +489,20 @@ tbody tr:hover {
     display: flex;
   }
 
-   .header img{
+  .header img{
     padding:20px;
-    margin-left: 50px;
+    margin-left: 20px;
     justify-content: center;
     width:400px;
     height:auto;
     object-fit: cover;
-    border-radius: 200px;
-}
-.admissions-banner {
-  display: none;
+    border-radius: 202px;
+    animation: slideInFromLeft 1.2s ease-out forwards;
 }
 
-.header h1{
-    padding-left: 50px;
+
+.header h2{
+    padding-left: 10px;
     padding-bottom: 10px;
     margin-left:0px;
     justify-content: center;
@@ -479,12 +518,22 @@ tbody tr:hover {
     
 
 }
+.admissions-banner {
+  display: none;
+}
 
 
-  /* Footer layout */
+}
+
+
+
+@media (max-width: 768px) {
+
+  /* Footer */
   .footer-container {
     flex-direction: column;
     align-items: center;
+    padding: 20px;
     gap: 30px;
   }
 
@@ -495,27 +544,32 @@ tbody tr:hover {
 
   .footer-column h4 {
     border-left: none;
-    border-bottom: 2px solid #f5b301;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 6px;
     display: inline-block;
-    padding: 5px 0;
   }
 
-  .footer-column a,
-  .footer-column p {
+  .footer-column h3 {
+    font-size: 18px;
+  }
+
+  .footer-column p,
+  .footer-column a {
     font-size: 14px;
   }
 
-  .social-icons a {
-    padding: 6px;
+  .Social.icons a {
+    font-size: 16px;
+    padding: 8px;
     margin: 5px;
-    font-size: 14px;
   }
 
   .footer-bottom {
     font-size: 12px;
-    padding-top: 15px;
+    padding-top: 10px;
   }
 }
+
 @media (max-width: 768px) {
   .placement-section h2 {
     font-size: 24px;
