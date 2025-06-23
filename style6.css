@@ -210,7 +210,7 @@ h1{
       padding: 15px;
       background-color: #f9f9f9;
     }
-    h3{
+     .new  h3{
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: #003366;
         text-align: center;
@@ -468,7 +468,7 @@ nav{
 
 
   
-      h3{
+ h3{
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: #003366;
         text-align: center;
@@ -478,7 +478,7 @@ nav{
         font-weight: 500;
     }
 
-    h2{
+ h2{
         color:#151515;
         margin-left: 70px;
         margin-bottom: 30px;
@@ -486,7 +486,7 @@ nav{
 
     
     }
-    .list li{
+.list li{
         margin-top:10px;
         color:black;
         margin-left: 100px;

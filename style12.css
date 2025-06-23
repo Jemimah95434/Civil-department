@@ -341,7 +341,7 @@ tbody tr:hover {
   margin-right: 10px;
   padding: 10px;
   background: #ffffff;
-  color: #0056b3;
+  color: #000000;
   border-radius: 50%;
   font-size: 18px;
   transition: background 0.3s ease, transform 0.3s ease;
@@ -356,11 +356,14 @@ tbody tr:hover {
 .footer-bottom {
   text-align: center;
   margin-top: 40px;
-  color: #cccccc;
+  color: white;
   font-size: 14px;
   border-top: 1px solid #444;
   padding-top: 20px;
+  
+  font-weight: 500;
 }
+
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
   .hamburger {

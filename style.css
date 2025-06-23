@@ -295,18 +295,19 @@ input[type="checkbox"] {
 .achievement-card p {
   font-size: 1.0rem;
   line-height: 1.7;
-  margin: 0;
+  margin-left: 20px;
   color: #333;
+  justify-content: center;
 }
 
 .achievement-card::before {
   content: "🏆";
-  font-size: 0.95rem;
-  margin-right: 10px;
+  font-size: 1rem;
+  margin-right: 50px;
   position: absolute;
   top: 25px;
   left: 25px;
-  justify-content: center;
+  justify-content:flex-start;
 }
 
 /* Slide-in on scroll */
