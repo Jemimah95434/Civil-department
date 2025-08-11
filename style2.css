@@ -201,7 +201,7 @@ input[type="checkbox"] {
       background-color: #0071c5;
       color: white;
       padding: 12px;
-      font-size: 18px;
+      font-size: 19px;
       text-align: center;
       cursor: pointer;
     }
@@ -249,7 +249,7 @@ input[type="checkbox"] {
       padding: 12px 18px;
       border-left: 5px solid #0056b3;
       border-radius: 8px;
-      font-size: 16px;
+      font-size: 19px;
       position: relative;
       transition: background 0.3s ease;
     }
@@ -270,6 +270,7 @@ input[type="checkbox"] {
       text-align: center;
       color: #003366;
       margin-bottom: 20px;
+      font-size: xx-large;
     }
 
     .library-image {
@@ -292,7 +293,7 @@ input[type="checkbox"] {
       padding: 12px 18px;
       border-left: 5px solid #0056b3;
       border-radius: 8px;
-      font-size: 16px;
+      font-size: 19px;
       transition: background 0.3s ease;
     }
 

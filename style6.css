@@ -216,12 +216,14 @@ h1{
         text-align: center;
         margin-top: 30px;
         margin-bottom: 50px;
+        font-size: larger;
     }
     h2{
         color:#151515;
         margin-left: 120px;
         margin-bottom: 30px;
         margin-top:2px;
+        font-size: x-large;
 
     
     }
@@ -231,6 +233,7 @@ h1{
         margin-left: 175px;
         margin-bottom: 10px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
 
     }
     .head h1{
