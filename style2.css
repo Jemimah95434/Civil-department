@@ -23,11 +23,10 @@ body {
 
 
 .header h2{
-    padding-left: 10px;
+    padding-left: 0px;
     padding-bottom: 10px;
     margin-left:0px;
-    justify-content: center;
-    font-family: "Libre Caslon Text", serif;
+    font-family: 'Lato', sans-serif;
 
     font-weight: 700;
     font-size:xx-large;
